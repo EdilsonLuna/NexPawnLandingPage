@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Benefits from '../components/Benefits.astro';
+import Features from '../components/Features.astro';
+import Pricing from '../components/Pricing.astro';
+import Demo from '../components/Demo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="NexPawn — Software para Casas de Empeño | Control de Empeños Online"
+  description="NexPawn: software para casas de empeño que controla empeños, caja, clientes e informes en un solo lugar. Sistema de empeños 100% en la nube. Prueba gratis."
+  lang="es"
+  canonical="https://nexpawn.com"
+>
+  <Navbar lang="es" />
+  <main>
+    <Hero />
+    <Benefits />
+    <Features />
+    <Pricing />
+    <Demo />
+  </main>
+  <Footer />
+</Layout>

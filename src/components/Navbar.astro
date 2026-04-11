@@ -1,0 +1,119 @@
+---
+interface Props {
+  lang?: 'es' | 'en';
+}
+const { lang = 'es' } = Astro.props;
+
+const navLinks = lang === 'es'
+  ? [
+      { label: 'Beneficios', href: '#beneficios' },
+      { label: 'Funcionalidades', href: '#funcionalidades' },
+      { label: 'Precios', href: '#precios' },
+      { label: 'Demo', href: '#demo' },
+    ]
+  : [
+      { label: 'Benefits', href: '#beneficios' },
+      { label: 'Features', href: '#funcionalidades' },
+      { label: 'Pricing', href: '#precios' },
+      { label: 'Demo', href: '#demo' },
+    ];
+
+const cta = lang === 'es' ? 'Probar gratis' : 'Try for free';
+const esUrl = '/es/software-casa-de-empeno';
+const enUrl = '/en/pawn-shop-software';
+---
+
+<header class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="NexPawn inicio">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        Nex<span class="navbar__logo-accent">Pawn</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="navbar__nav" aria-label="Navegación principal">
+        {navLinks.map((link) => (
+          <a href={link.href} class="navbar__nav-link">{link.label}</a>
+        ))}
+      </nav>
+
+      <!-- Actions -->
+      <div class="navbar__actions">
+        <!-- Language switcher -->
+        <div class="lang-switcher" aria-label="Cambiar idioma">
+          <a href={esUrl} class={`lang-switcher__btn${lang === 'es' ? ' lang-switcher__btn--active' : ''}`} hreflang="es" aria-label="Español">ES</a>
+          <span class="lang-switcher__sep" aria-hidden="true">|</span>
+          <a href={enUrl} class={`lang-switcher__btn${lang === 'en' ? ' lang-switcher__btn--active' : ''}`} hreflang="en" aria-label="English">EN</a>
+        </div>
+        <a href="#demo" class="btn btn--primary btn--sm">
+          {cta}
+        </a>
+        <!-- Hamburger (mobile) -->
+        <button
+          class="navbar__hamburger"
+          id="menu-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="4" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav class="navbar__mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+    {navLinks.map((link) => (
+      <a href={link.href} class="navbar__mobile-link">{link.label}</a>
+    ))}
+    <div style="padding-top: var(--space-3);">
+      <a href="#demo" class="btn btn--primary w-full" style="justify-content:center">
+        Prueba gratis
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navbar?.classList.add('is-scrolled');
+    } else {
+      navbar?.classList.remove('is-scrolled');
+    }
+  }, { passive: true });
+
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = mobileMenu?.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close mobile menu on link click
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      menuToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>

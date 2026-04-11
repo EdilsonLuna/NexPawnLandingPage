@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Privacy Policy — NexPawn"
+  description="Learn how NexPawn collects, uses and protects your personal information."
+  lang="en"
+  canonical="https://nexpawn.com/en/privacy-policy"
+>
+  <Navbar lang="en" />
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: April 2026</p>
+
+      <p>At NexPawn we value and respect the privacy of our users. This Privacy Policy describes how we collect, use and protect information when you use our platform.</p>
+
+      <h2>1. Information we collect</h2>
+      <p>We may collect the following types of information:</p>
+
+      <h3>a. User information:</h3>
+      <ul>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Login credentials</li>
+      </ul>
+
+      <h3>b. Information generated within the system:</h3>
+      <ul>
+        <li>Customer data entered by the user (names, ID, contact details)</li>
+        <li>Pawn, transaction and operation records</li>
+        <li>Cash register, purchase and sales records</li>
+      </ul>
+
+      <h2>2. Use of information</h2>
+      <p>Collected information is used to:</p>
+      <ul>
+        <li>Provide and maintain NexPawn's operation</li>
+        <li>Enable pawn shop management within the platform</li>
+        <li>Improve user experience</li>
+        <li>Provide technical support</li>
+        <li>Send service-related communications</li>
+      </ul>
+
+      <h2>3. Data responsibility</h2>
+      <p>NexPawn acts as a software provider.</p>
+      <p>The user is responsible for the data entered into the platform, including information about their own customers, and declares having the necessary authorization for its processing.</p>
+
+      <h2>4. Storage and security</h2>
+      <p>Information is stored on secure servers and reasonable measures are applied to protect data against unauthorized access, loss or alteration.</p>
+      <p>However, no system is completely secure, so absolute security cannot be guaranteed.</p>
+
+      <h2>5. User rights</h2>
+      <p>The user may:</p>
+      <ul>
+        <li>Access their information</li>
+        <li>Request correction or update</li>
+        <li>Request deletion of their data</li>
+      </ul>
+      <p>To exercise these rights, you may contact us via the email address indicated below.</p>
+
+      <h2>6. Use of cookies</h2>
+      <p>NexPawn may use cookies or similar technologies to improve user experience and analyze site usage.</p>
+
+      <h2>7. Changes to this policy</h2>
+      <p>We reserve the right to modify this Privacy Policy at any time. Changes will be published on this same page.</p>
+
+      <h2>8. Contact</h2>
+      <p>For questions related to this policy, you may write to:</p>
+      <p><a href="mailto:contact@nexpawn.com">contact@nexpawn.com</a></p>
+    </div>
+  </main>
+  <Footer lang="en" />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: 6rem 1.5rem 4rem;
+    min-height: 60vh;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-blue-600, #1b63ff);
+    margin-bottom: 0.5rem;
+  }
+
+  .last-updated {
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #6b7280);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text, #111827);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text, #111827);
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: var(--color-blue-600, #1b63ff);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+</style>

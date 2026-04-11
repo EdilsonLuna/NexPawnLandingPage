@@ -1,0 +1,64 @@
+---
+const benefits = [
+  {
+    icon: `<path d="M9 12h6M9 16h6M17 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+    title: 'Controla todos tus empeños sin perder dinero',
+    desc: 'Cada empeño registrado, con su monto, interés y fecha de vencimiento. Sin olvidos, sin pérdidas. Tu negocio bajo control total.',
+  },
+  {
+    icon: `<path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>`,
+    title: 'Lleva tu caja diaria sin errores',
+    desc: 'Ingresos, egresos y cierres de caja en segundos. Olvídate de las hojas de cálculo y los descuadres que te quitan tiempo y dinero.',
+  },
+  {
+    icon: `<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+    title: 'Nunca pierdas un vencimiento',
+    desc: 'Alertas automáticas de empeños por vencer, renovaciones y pagos pendientes. NexPawn trabaja mientras tú atiendes a tus clientes.',
+  },
+  {
+    icon: `<path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+    title: 'Toma decisiones con información clara',
+    desc: 'Reportes de ingresos, empeños activos y rentabilidad en tiempo real. Datos concretos para saber dónde está tu negocio y hacia dónde va.',
+  },
+  {
+    icon: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+    title: 'Conoce qué clientes te generan más rentabilidad',
+    desc: 'Historial completo por cliente: empeños anteriores, pagos, renovaciones. Identifica a tus mejores clientes y fidelízalos con facilidad.',
+  },
+  {
+    icon: `<rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+    title: 'Accede desde cualquier dispositivo',
+    desc: 'Celular, tablet o computador. NexPawn funciona en el navegador, sin instalar nada. Tu negocio siempre en tu bolsillo.',
+  },
+];
+---
+
+<section class="section section--alt" id="beneficios" aria-labelledby="benefits-title">
+  <div class="container">
+
+    <header class="section__header">
+      <span class="section__eyebrow">¿Por qué NexPawn?</span>
+      <h2 class="section__title" id="benefits-title">
+        Resultados reales para tu casa de empeño
+      </h2>
+      <p class="section__subtitle">
+        Diseñado para casas de empeño en Colombia y Latinoamérica. Olvida el Excel y los errores manuales.
+      </p>
+    </header>
+
+    <div class="benefits__grid">
+      {benefits.map((benefit) => (
+        <div class="benefit-item">
+          <div class="icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" set:html={benefit.icon} />
+          </div>
+          <div class="benefit-item__body">
+            <h3 class="benefit-item__title">{benefit.title}</h3>
+            <p class="benefit-item__desc">{benefit.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

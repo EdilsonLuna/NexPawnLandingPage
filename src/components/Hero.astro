@@ -1,0 +1,128 @@
+---
+---
+
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <!-- Decorative background blobs -->
+  <div class="hero__bg-blob-1" aria-hidden="true"></div>
+  <div class="hero__bg-blob-2" aria-hidden="true"></div>
+
+  <div class="container hero__container">
+
+    <!-- Left: Copy -->
+    <div class="hero__content">
+      <span class="hero__eyebrow">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="8" cy="8" r="3" fill="currentColor"/>
+          <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        Software 100% en la nube · Para casas de empeño
+      </span>
+
+      <h1 class="hero__title" id="hero-title">
+        Lleva tu casa de empeño
+        <span class="gradient-text"> al siguiente nivel</span>
+        con NexPawn
+      </h1>
+
+      <p class="hero__subtitle">
+        Controla tus empeños, clientes y caja en un solo lugar.
+        Sin Excel, sin errores, sin complicaciones.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#demo" class="btn btn--primary btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+          </svg>
+          Probar demo gratis
+        </a>
+        <a href="#precios" class="btn btn--outline btn--lg">
+          Ver planes
+        </a>
+      </div>
+
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Sin tarjeta de crédito
+        </div>
+        <div class="hero__trust-item">
+          <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Configuración en minutos
+        </div>
+        <div class="hero__trust-item">
+          <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Soporte en español
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Dashboard mock -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="dashboard-mock">
+        <div class="dashboard-mock__header">
+          <span class="dashboard-mock__title">Panel de control · Hoy</span>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span class="dashboard-mock__dot"></span>
+            <span style="font-size:0.7rem;color:var(--color-text-muted);font-weight:500;">En línea</span>
+          </div>
+        </div>
+
+        <div class="dashboard-mock__stats">
+          <div class="stat-mini">
+            <div class="stat-mini__value">48</div>
+            <div class="stat-mini__label">Empeños activos</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini__value" style="color:var(--color-success);">$12k</div>
+            <div class="stat-mini__label">Ingreso hoy</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini__value" style="color:var(--color-warning);">7</div>
+            <div class="stat-mini__label">Por vencer</div>
+          </div>
+        </div>
+
+        <div class="dashboard-mock__items">
+          <div class="mock-item">
+            <div class="mock-item__dot" style="background:var(--color-blue-400);"></div>
+            <div class="mock-item__text"></div>
+            <div class="mock-item__badge" style="background:var(--color-blue-50);color:var(--color-blue-700);">Activo</div>
+          </div>
+          <div class="mock-item">
+            <div class="mock-item__dot" style="background:var(--color-warning);"></div>
+            <div class="mock-item__text" style="width:70%;"></div>
+            <div class="mock-item__badge" style="background:#fef3c7;color:#92400e;">Vence hoy</div>
+          </div>
+          <div class="mock-item">
+            <div class="mock-item__dot" style="background:var(--color-success);"></div>
+            <div class="mock-item__text" style="width:85%;"></div>
+            <div class="mock-item__badge" style="background:#d1fae5;color:#065f46;">Pagado</div>
+          </div>
+          <div class="mock-item">
+            <div class="mock-item__dot" style="background:var(--color-blue-400);"></div>
+            <div class="mock-item__text" style="width:60%;"></div>
+            <div class="mock-item__badge" style="background:var(--color-blue-50);color:var(--color-blue-700);">Activo</div>
+          </div>
+        </div>
+
+        <!-- Mini chart bar decoration -->
+        <div style="margin-top:var(--space-6);padding-top:var(--space-4);border-top:1px solid var(--color-border-light);">
+          <div style="font-size:0.7rem;color:var(--color-text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:var(--space-3);">Ingresos últimos 7 días</div>
+          <div style="display:flex;align-items:flex-end;gap:6px;height:48px;">
+            {[40, 65, 50, 80, 70, 90, 100].map((h) => (
+              <div style={`flex:1;height:${h}%;background:var(--color-blue-${h > 70 ? '500' : '200'});border-radius:4px 4px 0 0;`}></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

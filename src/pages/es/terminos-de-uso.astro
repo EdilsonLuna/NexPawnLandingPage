@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Términos de Uso — NexPawn"
+  description="Lee los términos y condiciones de uso del software NexPawn para casas de empeño."
+  lang="es"
+  canonical="https://nexpawn.com/es/terminos-de-uso"
+>
+  <Navbar lang="es" />
+  <main class="legal-page">
+    <div class="container">
+      <h1>Términos de Uso</h1>
+      <p class="last-updated">Última actualización: abril 2026</p>
+
+      <h2>1. Uso del servicio</h2>
+      <p>NexPawn es una plataforma de software diseñada para la gestión de casas de empeño.</p>
+      <p>El usuario se compromete a utilizar el servicio de manera legal y adecuada.</p>
+
+      <h2>2. Responsabilidad del usuario</h2>
+      <p>El usuario es responsable de:</p>
+      <ul>
+        <li>La información que registra en la plataforma</li>
+        <li>El uso adecuado del sistema</li>
+        <li>La confidencialidad de sus credenciales</li>
+      </ul>
+      <p>NexPawn no se hace responsable por el uso indebido del sistema por parte del usuario.</p>
+
+      <h2>3. Datos de terceros</h2>
+      <p>El usuario declara que cuenta con la autorización necesaria para almacenar y gestionar datos de terceros (clientes) dentro de la plataforma.</p>
+
+      <h2>4. Disponibilidad del servicio</h2>
+      <p>NexPawn se ofrece "tal cual" y no garantiza disponibilidad ininterrumpida del servicio.</p>
+      <p>Podrán realizarse mantenimientos o actualizaciones que afecten temporalmente el acceso.</p>
+
+      <h2>5. Pagos y suscripciones</h2>
+      <ul>
+        <li>El acceso al servicio puede estar sujeto a pagos recurrentes (mensuales)</li>
+        <li>Los pagos no son reembolsables, salvo disposición contraria</li>
+        <li>NexPawn puede modificar los precios en cualquier momento</li>
+      </ul>
+
+      <h2>6. Limitación de responsabilidad</h2>
+      <p>NexPawn no será responsable por:</p>
+      <ul>
+        <li>Pérdidas económicas derivadas del uso del sistema</li>
+        <li>Errores en la información ingresada por el usuario</li>
+        <li>Decisiones tomadas con base en los datos del sistema</li>
+      </ul>
+
+      <h2>7. Terminación del servicio</h2>
+      <p>NexPawn podrá suspender o cancelar cuentas en caso de:</p>
+      <ul>
+        <li>Uso indebido</li>
+        <li>Incumplimiento de estos términos</li>
+      </ul>
+
+      <h2>8. Modificaciones</h2>
+      <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuo del servicio implica la aceptación de dichos cambios.</p>
+
+      <h2>9. Contacto</h2>
+      <p>Para cualquier duda o solicitud:</p>
+      <p><a href="mailto:contact@nexpawn.com">contact@nexpawn.com</a></p>
+    </div>
+  </main>
+  <Footer lang="es" />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: 6rem 1.5rem 4rem;
+    min-height: 60vh;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-blue-600, #1b63ff);
+    margin-bottom: 0.5rem;
+  }
+
+  .last-updated {
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #6b7280);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text, #111827);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: var(--color-blue-600, #1b63ff);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+</style>

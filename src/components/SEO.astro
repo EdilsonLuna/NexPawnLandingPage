@@ -1,0 +1,69 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  lang?: 'es' | 'en';
+  canonical?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  lang = 'es',
+  canonical = 'https://nexpawn.com',
+  ogImage = 'https://nexpawn.com/og-image.png',
+} = Astro.props;
+
+const siteUrl = 'https://nexpawn.com';
+---
+
+<!-- Primary Meta -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href={canonical} />
+
+<!-- Language -->
+<meta http-equiv="content-language" content={lang} />
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="es" href={`${siteUrl}/es/software-casa-de-empeno`} />
+<link rel="alternate" hreflang="en" href={`${siteUrl}/en/pawn-shop-software`} />
+<link rel="alternate" hreflang="x-default" href={siteUrl} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content={lang === 'es' ? 'es_CO' : 'en_US'} />
+<meta property="og:site_name" content="NexPawn" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NexPawn",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": description,
+  "url": siteUrl,
+  "offers": {
+    "@type": "Offer",
+    "price": "299",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "NexPawn",
+    "url": siteUrl
+  }
+})} />

@@ -1,0 +1,324 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Pawn Shop Software — NexPawn | Pawn Management System"
+  description="NexPawn is the leading pawn shop software for managing loans, inventory, customers and cash register in one place. Start your free trial today."
+  lang="en"
+  canonical="https://nexpawn.com/en/pawn-shop-software"
+>
+  <Navbar lang="en" />
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg-blob-1" aria-hidden="true"></div>
+      <div class="hero__bg-blob-2" aria-hidden="true"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__eyebrow">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="8" cy="8" r="3" fill="currentColor"/>
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            100% cloud-based pawn management software
+          </span>
+
+          <h1 class="hero__title" id="hero-title">
+            Take your pawn shop
+            <span class="gradient-text"> to the next level</span>
+            with NexPawn
+          </h1>
+
+          <p class="hero__subtitle">
+            Control your pawn loans, customers and cash register in one place.
+            No spreadsheets. No errors. No headaches.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#demo" class="btn btn--primary btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+              </svg>
+              Try demo for free
+            </a>
+            <a href="#precios" class="btn btn--outline btn--lg">
+              See pricing
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              No credit card required
+            </div>
+            <div class="hero__trust-item">
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Up and running in minutes
+            </div>
+            <div class="hero__trust-item">
+              <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Bilingual support
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="dashboard-mock">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">Control panel · Today</span>
+              <div style="display:flex;align-items:center;gap:6px;">
+                <span class="dashboard-mock__dot"></span>
+                <span style="font-size:0.7rem;color:var(--color-text-muted);font-weight:500;">Online</span>
+              </div>
+            </div>
+            <div class="dashboard-mock__stats">
+              <div class="stat-mini">
+                <div class="stat-mini__value">48</div>
+                <div class="stat-mini__label">Active loans</div>
+              </div>
+              <div class="stat-mini">
+                <div class="stat-mini__value" style="color:var(--color-success);">$12k</div>
+                <div class="stat-mini__label">Today's income</div>
+              </div>
+              <div class="stat-mini">
+                <div class="stat-mini__value" style="color:var(--color-warning);">7</div>
+                <div class="stat-mini__label">Due today</div>
+              </div>
+            </div>
+            <div class="dashboard-mock__items">
+              <div class="mock-item">
+                <div class="mock-item__dot" style="background:var(--color-blue-400);"></div>
+                <div class="mock-item__text"></div>
+                <div class="mock-item__badge" style="background:var(--color-blue-50);color:var(--color-blue-700);">Active</div>
+              </div>
+              <div class="mock-item">
+                <div class="mock-item__dot" style="background:var(--color-warning);"></div>
+                <div class="mock-item__text" style="width:70%;"></div>
+                <div class="mock-item__badge" style="background:#fef3c7;color:#92400e;">Due today</div>
+              </div>
+              <div class="mock-item">
+                <div class="mock-item__dot" style="background:var(--color-success);"></div>
+                <div class="mock-item__text" style="width:85%;"></div>
+                <div class="mock-item__badge" style="background:#d1fae5;color:#065f46;">Paid</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section section--alt" id="beneficios" aria-labelledby="benefits-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Why NexPawn?</span>
+          <h2 class="section__title" id="benefits-title">Real results for your pawn shop</h2>
+          <p class="section__subtitle">Built for pawn shops across Latin America and the US. No more spreadsheets, no more manual errors.</p>
+        </header>
+        <div class="benefits__grid">
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M9 16h6M17 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Track every pawn loan without losing money</h3>
+              <p class="benefit-item__desc">Every pawn loan recorded with amount, interest, and due date. No missed items, no losses. Full control of your pawn business.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Run your daily cash register without errors</h3>
+              <p class="benefit-item__desc">Log income, expenses and cash closings in seconds. Say goodbye to spreadsheets and the costly mismatches they cause.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Never miss a due date again</h3>
+              <p class="benefit-item__desc">Automatic alerts for expiring loans, renewals, and pending payments. NexPawn works in the background while you serve customers.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Make decisions with clear data</h3>
+              <p class="benefit-item__desc">Real-time income, active loans and profitability reports. Know exactly where your pawn shop stands and where it's headed.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Know which customers drive the most profit</h3>
+              <p class="benefit-item__desc">Full customer history: past loans, payments, renewals. Identify your best clients and build lasting relationships.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="benefit-item__body">
+              <h3 class="benefit-item__title">Access from any device</h3>
+              <p class="benefit-item__desc">Phone, tablet, or computer. NexPawn runs in your browser with nothing to install. Your pawn shop, always in your pocket.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="funcionalidades" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Pawn management system features</span>
+          <h2 class="section__title" id="features-title">Everything your pawn operation needs</h2>
+          <p class="section__subtitle">From creating a pawn loan to closing the cash register, NexPawn covers every part of your daily operation.</p>
+        </header>
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M9 16h6M17 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Core</span></div>
+            <h3 class="feature-card__title">Pawn loan management</h3>
+            <p class="feature-card__desc">Create, track, and close pawn loans with full item detail, interest, due dates, photos, and 100% traceable history.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Inventory</span></div>
+            <h3 class="feature-card__title">Item inventory</h3>
+            <p class="feature-card__desc">Manage all pawned or for-sale items. Fast search, photo storage and valuation to keep your inventory organized.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Cash</span></div>
+            <h3 class="feature-card__title">Cash register & payments</h3>
+            <p class="feature-card__desc">Log payments, deposits and reconciliations. Daily cash closings and instant financial status for your pawn shop.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Customers</span></div>
+            <h3 class="feature-card__title">Customer records</h3>
+            <p class="feature-card__desc">Full customer database with complete history of loans, payments and documents. Fast to query, secure to store.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Reports</span></div>
+            <h3 class="feature-card__title">Reports & analytics</h3>
+            <p class="feature-card__desc">Generate income, sales and overdue loan reports. Export to PDF or Excel with one click. Real data for real decisions.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon"><div class="icon-box icon-box--lg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+            <div style="margin-bottom:var(--space-3);"><span class="badge badge--blue">Alerts</span></div>
+            <h3 class="feature-card__title">Automatic notifications</h3>
+            <p class="feature-card__desc">Due date alerts, WhatsApp and email reminders. Keep your team and customers informed without lifting a finger.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section--alt" id="precios" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Plans & pricing</span>
+          <h2 class="section__title" id="pricing-title">Choose the plan that fits your pawn shop</h2>
+          <p class="section__subtitle">No hidden fees. No forced contracts. Change plans whenever you need.</p>
+        </header>
+        <div class="pricing__grid">
+          <div class="pricing-card">
+            <div class="pricing-card__plan">Basic</div>
+            <div class="pricing-card__price"><span class="pricing-card__currency">$</span><span class="pricing-card__amount">299</span><span class="pricing-card__period">/mo</span></div>
+            <p class="pricing-card__desc">Perfect for small pawn shops starting to digitize their operation.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Up to 100 active loans</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>1 user</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Pawn loan management</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Cash register</li>
+              <li class="pricing-card__feature pricing-card__feature--off"><span class="pricing-card__feature-icon pricing-card__feature-icon--off"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Due-date alerts</li>
+              <li class="pricing-card__feature pricing-card__feature--off"><span class="pricing-card__feature-icon pricing-card__feature-icon--off"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Multi-user & roles</li>
+            </ul>
+            <a href="#demo" class="btn btn--outline w-full" style="justify-content:center">Start free</a>
+          </div>
+          <div class="pricing-card pricing-card--popular">
+            <div class="pricing-card__badge"><span class="badge badge--popular">Most popular</span></div>
+            <div class="pricing-card__plan">Professional</div>
+            <div class="pricing-card__price"><span class="pricing-card__currency">$</span><span class="pricing-card__amount">699</span><span class="pricing-card__period">/mo</span></div>
+            <p class="pricing-card__desc">For growing pawn shops that need more control and automation.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Unlimited active loans</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Up to 5 users</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Advanced pawn management</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Alerts & notifications</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Multi-user & roles</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Advanced reports + export</li>
+            </ul>
+            <a href="#demo" class="btn btn--primary w-full" style="justify-content:center">Start trial</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card__plan">Enterprise</div>
+            <div class="pricing-card__price"><span class="pricing-card__currency">$</span><span class="pricing-card__amount">1,299</span><span class="pricing-card__period">/mo</span></div>
+            <p class="pricing-card__desc">Complete solution for pawn shop chains or high-volume operations.</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Unlimited everything</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Multiple branches</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>All Professional features</li>
+              <li class="pricing-card__feature"><span class="pricing-card__feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>24/7 priority support</li>
+            </ul>
+            <a href="#demo" class="btn btn--outline w-full" style="justify-content:center">Contact sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo CTA -->
+    <section class="section demo" id="demo" aria-labelledby="demo-title">
+      <div class="demo__bg-blob" aria-hidden="true"></div>
+      <div class="demo__bg-blob-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="demo__content">
+          <span class="badge badge--accent" style="margin-bottom:var(--space-5);display:inline-flex;">
+            Fully functional demo · No sign-up needed
+          </span>
+          <h2 class="demo__title" id="demo-title">
+            Try NexPawn right now.<br />
+            No sign-up. No commitment.
+          </h2>
+          <p class="demo__subtitle">
+            Access a fully functional pawn shop management demo and see how your business would look organized.
+            The #1 pawn tracking software — experience it today.
+          </p>
+          <div class="demo__actions">
+            <a href="mailto:demo@nexpawn.com" class="btn btn--white btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3L19 12L5 21V3Z" fill="currentColor"/></svg>
+              Try NexPawn free
+            </a>
+            <a href="tel:+525500000000" class="btn btn--outline-white btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.44 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.35 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6.5 6.5l.77-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.05z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Talk to sales
+            </a>
+          </div>
+          <p class="demo__note">Response within 24 hours · Bilingual support</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang="en" />
+</Layout>
