@@ -112,11 +112,6 @@
         "tag": "Reportes",
         "title": "Reportes y estadísticas",
         "desc": "Genera reportes de ingresos, ventas, empeños vencidos y más. Exporta a PDF o Excel con un clic."
-      },
-      {
-        "tag": "Alertas",
-        "title": "Notificaciones automáticas",
-        "desc": "Alertas de vencimiento, recordatorios por WhatsApp o correo. Mantén a tu equipo y clientes siempre informados."
       }
     ]
   },

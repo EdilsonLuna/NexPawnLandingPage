@@ -112,11 +112,6 @@
         "tag": "Reports",
         "title": "Reports & analytics",
         "desc": "Generate income, sales and overdue loan reports. Export to PDF or Excel with one click. Real data for real decisions."
-      },
-      {
-        "tag": "Alerts",
-        "title": "Automatic notifications",
-        "desc": "Due date alerts, WhatsApp and email reminders. Keep your team and customers informed without lifting a finger."
       }
     ]
   },
