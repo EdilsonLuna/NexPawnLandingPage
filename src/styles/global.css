@@ -937,10 +937,11 @@ p {
 
 /* ── Pricing ──────────────────────────────────────────────────── */
 .pricing__grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-6);
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 .pricing-card {
@@ -951,6 +952,9 @@ p {
   box-shadow: var(--shadow-sm);
   transition: box-shadow var(--transition-base), transform var(--transition-base);
   position: relative;
+  width: 100%;
+  max-width: 340px;
+  flex: 1 1 280px;
 }
 
 .pricing-card:hover {
@@ -1271,7 +1275,11 @@ p {
   }
 
   .pricing__grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    justify-content: center;
+    align-items: stretch;
   }
 
   .footer__grid {
@@ -1328,7 +1336,11 @@ p {
   }
 
   .pricing__grid {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    justify-content: center;
+    align-items: stretch;
   }
 
   .footer__grid {

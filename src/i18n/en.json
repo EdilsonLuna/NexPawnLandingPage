@@ -134,15 +134,22 @@
         "currency": "$",
         "amount": "14.99",
         "period": "USD/mo",
-        "desc": "Perfect for small pawn shops starting to digitize their operation.",
+        "desc": "Ideal for pawn shops starting their digital journey. Includes essential features for daily control.",
         "cta": "Get started",
         "ctaVariant": "btn--outline",
         "popular": true,
         "features": [
-          { "text": "Dashboard with your pawn shop data", "included": true },
-          { "text": "Pawn loan management", "included": true },
-          { "text": "Customer management", "included": true },
-          { "text": "1 user", "included": true }
+          { "text": "1 functional user", "included": true },
+          { "text": "Basic dashboard:", "included": true },
+          { "text": "- Total loaned today", "included": true },
+          { "text": "- Loans created today, loans due soon (3 days), and active capital", "included": true },
+          { "text": "Pawn module:", "included": true },
+          { "text": "- Creation, listing, and closing/withdrawal", "included": true },
+          { "text": "Customer module:", "included": true },
+          { "text": "- Customer list and details", "included": true },
+          { "text": "- Loan history", "included": true },
+          { "text": "- Average per loan", "included": true },
+          { "text": "- Time as customer", "included": true }
         ]
       }
     ]

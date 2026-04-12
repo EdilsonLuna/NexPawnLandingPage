@@ -134,15 +134,22 @@
         "currency": "$",
         "amount": "14,99",
         "period": "USD/mes",
-        "desc": "Perfecto para pequeñas casas de empeño que están comenzando a digitalizar su operación.",
+        "desc": "Ideal para casas de empeño que inician su digitalización. Incluye características esenciales para el control diario.",
         "cta": "Comenzar a usarlo",
         "ctaVariant": "btn--outline",
         "popular": true,
         "features": [
-          { "text": "Dashboard con datos de tu casa de empeño", "included": true },
-          { "text": "Gestión de Empeños", "included": true },
-          { "text": "Gestión de Clientes", "included": true },
-          { "text": "1 usuario", "included": true }
+          { "text": "1 usuario funcional", "included": true },
+          { "text": "Dashboard básico:", "included": true },
+          { "text": "- Total prestado del día", "included": true },
+          { "text": "- Empeños del día, empeños a vencer (3 días), y capital activo", "included": true },
+          { "text": "Módulo de empeños:", "included": true },
+          { "text": "- Creación, listado y finalización/retiro", "included": true },
+          { "text": "Módulo de clientes:", "included": true },
+          { "text": "- Listado, detalle de clientes", "included": true },
+          { "text": "- Historial de empeños", "included": true },
+          { "text": "- Promedio por empeño", "included": true },
+          { "text": "- Tiempo como cliente", "included": true }
         ]
       }
     ]
