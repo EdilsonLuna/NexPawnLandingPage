@@ -1,79 +1,17 @@
 ---
+import { t } from '../i18n';
+import type { Lang } from '../i18n';
+
 interface Props {
-  lang?: 'es' | 'en';
+  lang: Lang;
 }
-const { lang = 'es' } = Astro.props;
+const { lang } = Astro.props;
 
 const currentYear = new Date().getFullYear();
 
-const t = {
-  es: {
-    tagline: 'El software moderno para casas de empeño. Rápido, seguro y fácil de usar.',
-    col1: 'Producto',
-    col2: 'Empresa',
-    col3: 'Soporte',
-    copy: 'Todos los derechos reservados.',
-    privacy: 'Privacidad',
-    privacyHref: '/es/politica-de-privacidad',
-    terms: 'Términos de uso',
-    termsHref: '/es/terminos-de-uso',
-    cookies: 'Cookies',
-    links: {
-      producto: [
-        { label: 'Funcionalidades', href: '#funcionalidades' },
-        { label: 'Precios', href: '#precios' },
-        { label: 'Demo gratuita', href: '#demo' },
-        { label: 'Novedades', href: '#' },
-      ],
-      empresa: [
-        { label: 'Sobre NexPawn', href: '#' },
-        { label: 'Blog', href: '#' },
-        { label: 'Contacto', href: 'mailto:hola@nexpawn.com' },
-        { label: 'Trabaja con nosotros', href: '#' },
-      ],
-      soporte: [
-        { label: 'Centro de ayuda', href: '#' },
-        { label: 'Documentación', href: '#' },
-        { label: 'Soporte técnico', href: '#' },
-        { label: 'Estado del sistema', href: '#' },
-      ],
-    },
-  },
-  en: {
-    tagline: 'Modern pawn shop software. Fast, secure and easy to use.',
-    col1: 'Product',
-    col2: 'Company',
-    col3: 'Support',
-    copy: 'All rights reserved.',
-    privacy: 'Privacy',
-    privacyHref: '/en/privacy-policy',
-    terms: 'Terms of use',
-    termsHref: '/en/terms-of-use',
-    cookies: 'Cookies',
-    links: {
-      producto: [
-        { label: 'Features', href: '#funcionalidades' },
-        { label: 'Pricing', href: '#precios' },
-        { label: 'Free demo', href: '#demo' },
-        { label: "What's new", href: '#' },
-      ],
-      empresa: [
-        { label: 'About NexPawn', href: '#' },
-        { label: 'Blog', href: '#' },
-        { label: 'Contact', href: 'mailto:hello@nexpawn.com' },
-        { label: 'Work with us', href: '#' },
-      ],
-      soporte: [
-        { label: 'Help center', href: '#' },
-        { label: 'Documentation', href: '#' },
-        { label: 'Technical support', href: '#' },
-        { label: 'System status', href: '#' },
-      ],
-    },
-  },
-};
-
-const copy = t[lang];
+const productLinks = t(lang, 'footer.productLinks') as { label: string; href: string }[];
+const companyLinks = t(lang, 'footer.companyLinks') as { label: string; href: string }[];
+const supportLinks = t(lang, 'footer.supportLinks') as { label: string; href: string }[];
 ---
 
 <footer class="footer" aria-labelledby="footer-heading">
@@ -84,7 +22,7 @@ const copy = t[lang];
 
       <!-- Brand column -->
       <div>
-        <a href="/" class="footer__logo" aria-label="NexPawn inicio">
+        <a href={`/${lang}/`} class="footer__logo" aria-label="NexPawn">
           <span class="footer__logo-icon" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
@@ -95,15 +33,15 @@ const copy = t[lang];
           Nex<span class="footer__logo-accent">Pawn</span>
         </a>
         <p class="footer__tagline">
-          {copy.tagline}
+          {t(lang, 'footer.tagline')}
         </p>
       </div>
 
       <!-- Product links -->
       <div>
-        <p class="footer__col-title">{copy.col1}</p>
+        <p class="footer__col-title">{t(lang, 'footer.col1')}</p>
         <ul class="footer__links">
-          {copy.links.producto.map((link) => (
+          {productLinks.map((link) => (
             <li>
               <a href={link.href} class="footer__link">{link.label}</a>
             </li>
@@ -113,9 +51,9 @@ const copy = t[lang];
 
       <!-- Company links -->
       <div>
-        <p class="footer__col-title">{copy.col2}</p>
+        <p class="footer__col-title">{t(lang, 'footer.col2')}</p>
         <ul class="footer__links">
-          {copy.links.empresa.map((link) => (
+          {companyLinks.map((link) => (
             <li>
               <a href={link.href} class="footer__link">{link.label}</a>
             </li>
@@ -125,9 +63,9 @@ const copy = t[lang];
 
       <!-- Support links -->
       <div>
-        <p class="footer__col-title">{copy.col3}</p>
+        <p class="footer__col-title">{t(lang, 'footer.col3')}</p>
         <ul class="footer__links">
-          {copy.links.soporte.map((link) => (
+          {supportLinks.map((link) => (
             <li>
               <a href={link.href} class="footer__link">{link.label}</a>
             </li>
@@ -140,12 +78,12 @@ const copy = t[lang];
     <!-- Bottom bar -->
     <div class="footer__bottom">
       <p class="footer__copy">
-        &copy; {currentYear} NexPawn. {copy.copy}
+        &copy; {currentYear} NexPawn. {t(lang, 'footer.copy')}
       </p>
       <nav class="footer__bottom-links" aria-label="Legal">
-        <a href={copy.privacyHref} class="footer__bottom-link">{copy.privacy}</a>
-        <a href={copy.termsHref} class="footer__bottom-link">{copy.terms}</a>
-        <a href="#" class="footer__bottom-link">{copy.cookies}</a>
+        <a href={`/${lang}/privacy-policy`} class="footer__bottom-link">{t(lang, 'footer.privacy')}</a>
+        <a href={`/${lang}/terms-of-use`} class="footer__bottom-link">{t(lang, 'footer.terms')}</a>
+        <a href="#" class="footer__bottom-link">{t(lang, 'footer.cookies')}</a>
       </nav>
     </div>
 

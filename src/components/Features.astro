@@ -1,70 +1,48 @@
 ---
-const features = [
-  {
-    icon: `<path d="M9 12h6M9 16h6M17 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3H7a2 2 0 0 0-2 2v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
-    tag: 'Core',
-    title: 'Gestión de empeños',
-    desc: 'Registro completo de cada operación: artículo, monto, interés, fecha de vencimiento, fotos y más. Historial trazable al 100%.',
-  },
-  {
-    icon: `<rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
-    tag: 'Inventario',
-    title: 'Control de artículos',
-    desc: 'Administra el inventario de prendas y artículos en empeño o a la venta. Búsqueda rápida, fotos y valoración.',
-  },
-  {
-    icon: `<path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>`,
-    tag: 'Pagos',
-    title: 'Caja y pagos',
-    desc: 'Registra cobros, abonos y liquidaciones. Lleva el corte de caja diario y el estado financiero del negocio al instante.',
-  },
-  {
-    icon: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>`,
-    tag: 'Clientes',
-    title: 'Expedientes de clientes',
-    desc: 'Base de datos de clientes con historial completo de empeños, pagos y documentos. Rápido de consultar, seguro de guardar.',
-  },
-  {
-    icon: `<path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
-    tag: 'Reportes',
-    title: 'Reportes y estadísticas',
-    desc: 'Genera reportes de ingresos, ventas, empeños vencidos y más. Exporta a PDF o Excel con un clic.',
-  },
-  {
-    icon: `<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
-    tag: 'Alertas',
-    title: 'Notificaciones automáticas',
-    desc: 'Alertas de vencimiento, recordatorios por WhatsApp o correo. Mantén a tu equipo y clientes siempre informados.',
-  },
+import { t } from '../i18n';
+import type { Lang } from '../i18n';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
+const icons = [
+  `<path d="M9 12h6M9 16h6M17 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3H7a2 2 0 0 0-2 2v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+  `<rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+  `<path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>`,
+  `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>`,
+  `<path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`,
+  `<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
 ];
+
+const items = t(lang, 'features.items') as { tag: string; title: string; desc: string }[];
 ---
 
 <section class="section" id="funcionalidades" aria-labelledby="features-title">
   <div class="container">
 
     <header class="section__header">
-      <span class="section__eyebrow">Funcionalidades del sistema de empeños</span>
+      <span class="section__eyebrow">{t(lang, 'features.eyebrow')}</span>
       <h2 class="section__title" id="features-title">
-        Todo el control que necesitas, en un solo sistema
+        {t(lang, 'features.title')}
       </h2>
       <p class="section__subtitle">
-        Desde el registro del empeño hasta el cierre de caja, NexPawn cubre cada parte de tu operación diaria.
+        {t(lang, 'features.subtitle')}
       </p>
     </header>
 
     <div class="features__grid">
-      {features.map((feature) => (
+      {items.map((item, i) => (
         <article class="feature-card">
           <div class="feature-card__icon">
             <div class="icon-box icon-box--lg" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" set:html={feature.icon} />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" set:html={icons[i]} />
             </div>
           </div>
           <div style="margin-bottom: var(--space-3);">
-            <span class="badge badge--blue">{feature.tag}</span>
+            <span class="badge badge--blue">{item.tag}</span>
           </div>
-          <h3 class="feature-card__title">{feature.title}</h3>
-          <p class="feature-card__desc">{feature.desc}</p>
+          <h3 class="feature-card__title">{item.title}</h3>
+          <p class="feature-card__desc">{item.desc}</p>
         </article>
       ))}
     </div>

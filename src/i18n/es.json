@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "landing": {
+      "title": "NexPawn — Software para Casas de Empeño | Control de Empeños Online",
+      "description": "NexPawn: software para casas de empeño que controla empeños, caja, clientes e informes en un solo lugar. Sistema de empeños 100% en la nube. Prueba gratis.",
+      "canonical": "https://nexpawn.com/es"
+    },
+    "privacy": {
+      "title": "Política de Privacidad — NexPawn",
+      "description": "Conoce cómo NexPawn recopila, usa y protege tu información personal.",
+      "canonical": "https://nexpawn.com/es/privacy-policy"
+    },
+    "terms": {
+      "title": "Términos de Uso — NexPawn",
+      "description": "Lee los términos y condiciones de uso del software NexPawn para casas de empeño.",
+      "canonical": "https://nexpawn.com/es/terms-of-use"
+    }
+  },
+  "navbar": {
+    "links": [
+      { "label": "Beneficios", "href": "#beneficios" },
+      { "label": "Funcionalidades", "href": "#funcionalidades" },
+      { "label": "Precios", "href": "#precios" },
+      { "label": "Demo", "href": "#demo" }
+    ],
+    "cta": "Probar gratis",
+    "navLabel": "Navegación principal",
+    "menuLabel": "Abrir menú",
+    "mobileMenuLabel": "Menú móvil",
+    "mobileCta": "Prueba gratis"
+  },
+  "hero": {
+    "eyebrow": "Software 100% en la nube · Para casas de empeño",
+    "titleLine1": "Lleva tu casa de empeño",
+    "titleHighlight": " al siguiente nivel",
+    "titleLine2": "con NexPawn",
+    "subtitle": "Controla tus empeños, clientes y caja en un solo lugar. Sin Excel, sin errores, sin complicaciones.",
+    "ctaDemo": "Probar demo gratis",
+    "ctaPricing": "Ver planes",
+    "trust1": "Sin tarjeta de crédito",
+    "trust2": "Configuración en minutos",
+    "trust3": "Soporte en español",
+    "dashboard": {
+      "title": "Panel de control · Hoy",
+      "online": "En línea",
+      "stat1Label": "Empeños activos",
+      "stat2Label": "Ingreso hoy",
+      "stat3Label": "Por vencer",
+      "badgeActive": "Activo",
+      "badgeDueToday": "Vence hoy",
+      "badgePaid": "Pagado",
+      "chartTitle": "Ingresos últimos 7 días"
+    }
+  },
+  "benefits": {
+    "eyebrow": "¿Por qué NexPawn?",
+    "title": "Resultados reales para tu casa de empeño",
+    "subtitle": "Diseñado para casas de empeño en Colombia y Latinoamérica. Olvida el Excel y los errores manuales.",
+    "items": [
+      {
+        "title": "Controla todos tus empeños sin perder dinero",
+        "desc": "Cada empeño registrado, con su monto, interés y fecha de vencimiento. Sin olvidos, sin pérdidas. Tu negocio bajo control total."
+      },
+      {
+        "title": "Lleva tu caja diaria sin errores",
+        "desc": "Ingresos, egresos y cierres de caja en segundos. Olvídate de las hojas de cálculo y los descuadres que te quitan tiempo y dinero."
+      },
+      {
+        "title": "Nunca pierdas un vencimiento",
+        "desc": "Alertas automáticas de empeños por vencer, renovaciones y pagos pendientes. NexPawn trabaja mientras tú atiendes a tus clientes."
+      },
+      {
+        "title": "Toma decisiones con información clara",
+        "desc": "Reportes de ingresos, empeños activos y rentabilidad en tiempo real. Datos concretos para saber dónde está tu negocio y hacia dónde va."
+      },
+      {
+        "title": "Conoce qué clientes te generan más rentabilidad",
+        "desc": "Historial completo por cliente: empeños anteriores, pagos, renovaciones. Identifica a tus mejores clientes y fidelízalos con facilidad."
+      },
+      {
+        "title": "Accede desde cualquier dispositivo",
+        "desc": "Celular, tablet o computador. NexPawn funciona en el navegador, sin instalar nada. Tu negocio siempre en tu bolsillo."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Funcionalidades del sistema de empeños",
+    "title": "Todo el control que necesitas, en un solo sistema",
+    "subtitle": "Desde el registro del empeño hasta el cierre de caja, NexPawn cubre cada parte de tu operación diaria.",
+    "items": [
+      {
+        "tag": "Core",
+        "title": "Gestión de empeños",
+        "desc": "Registro completo de cada operación: artículo, monto, interés, fecha de vencimiento, fotos y más. Historial trazable al 100%."
+      },
+      {
+        "tag": "Inventario",
+        "title": "Control de artículos",
+        "desc": "Administra el inventario de prendas y artículos en empeño o a la venta. Búsqueda rápida, fotos y valoración."
+      },
+      {
+        "tag": "Pagos",
+        "title": "Caja y pagos",
+        "desc": "Registra cobros, abonos y liquidaciones. Lleva el corte de caja diario y el estado financiero del negocio al instante."
+      },
+      {
+        "tag": "Clientes",
+        "title": "Expedientes de clientes",
+        "desc": "Base de datos de clientes con historial completo de empeños, pagos y documentos. Rápido de consultar, seguro de guardar."
+      },
+      {
+        "tag": "Reportes",
+        "title": "Reportes y estadísticas",
+        "desc": "Genera reportes de ingresos, ventas, empeños vencidos y más. Exporta a PDF o Excel con un clic."
+      },
+      {
+        "tag": "Alertas",
+        "title": "Notificaciones automáticas",
+        "desc": "Alertas de vencimiento, recordatorios por WhatsApp o correo. Mantén a tu equipo y clientes siempre informados."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Planes y precios",
+    "title": "Elige el plan que mejor se adapta a tu negocio",
+    "subtitle": "Sin costos ocultos. Sin contratos forzosos. Cambia de plan cuando lo necesites.",
+    "popularBadge": "Más popular",
+    "featuresLabel": "Incluido en plan",
+    "footnote": "Gestiona tu casa de empeño.",
+    "footnoteCta": "Empieza hoy con NexPawn →",
+    "plans": [
+      {
+        "plan": "Básico",
+        "currency": "$",
+        "amount": "14,99",
+        "period": "USD/mes",
+        "desc": "Perfecto para pequeñas casas de empeño que están comenzando a digitalizar su operación.",
+        "cta": "Comenzar a usarlo",
+        "ctaVariant": "btn--outline",
+        "popular": true,
+        "features": [
+          { "text": "Dashboard con datos de tu casa de empeño", "included": true },
+          { "text": "Gestión de Empeños", "included": true },
+          { "text": "Gestión de Clientes", "included": true },
+          { "text": "1 usuario", "included": true }
+        ]
+      }
+    ]
+  },
+  "demo": {
+    "badge": "Demo completamente funcional · Sin registro",
+    "titleLine1": "Prueba NexPawn ahora mismo.",
+    "titleLine2": "Sin registro, sin compromiso.",
+    "subtitle": "Accede a una demo completamente funcional y mira cómo sería tu negocio organizado. Descubre el software para casas de empeño que tu operación necesita.",
+    "cta": "Probar NexPawn gratis",
+    "note": "Respuesta en menos de 24 horas · Soporte en español"
+  },
+  "footer": {
+    "tagline": "El software moderno para casas de empeño. Rápido, seguro y fácil de usar.",
+    "col1": "Producto",
+    "col2": "Empresa",
+    "col3": "Soporte",
+    "copy": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos de uso",
+    "cookies": "Cookies",
+    "productLinks": [
+      { "label": "Funcionalidades", "href": "#funcionalidades" },
+      { "label": "Precios", "href": "#precios" },
+      { "label": "Demo gratuita", "href": "#demo" },
+      { "label": "Novedades", "href": "#" }
+    ],
+    "companyLinks": [
+      { "label": "Sobre NexPawn", "href": "#" },
+      { "label": "Blog", "href": "#" },
+      { "label": "Contacto", "href": "mailto:hola@nexpawn.com" },
+      { "label": "Trabaja con nosotros", "href": "#" }
+    ],
+    "supportLinks": [
+      { "label": "Centro de ayuda", "href": "#" },
+      { "label": "Documentación", "href": "#" },
+      { "label": "Soporte técnico", "href": "#" },
+      { "label": "Estado del sistema", "href": "#" }
+    ]
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: abril 2026",
+    "intro": "En NexPawn valoramos y respetamos la privacidad de nuestros usuarios. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos la información cuando utilizas nuestra plataforma.",
+    "sections": [
+      {
+        "title": "1. Información que recopilamos",
+        "blocks": [
+          { "type": "p", "text": "Podemos recopilar los siguientes tipos de información:" },
+          { "type": "h3", "text": "a. Información del usuario:" },
+          { "type": "ul", "items": ["Nombre", "Correo electrónico", "Información de acceso"] },
+          { "type": "h3", "text": "b. Información generada dentro del sistema:" },
+          { "type": "ul", "items": ["Datos de clientes registrados por el usuario (nombres, identificación, contacto)", "Información de empeños, transacciones y operaciones", "Registros de caja, compras y ventas"] }
+        ]
+      },
+      {
+        "title": "2. Uso de la información",
+        "blocks": [
+          { "type": "p", "text": "La información recopilada se utiliza para:" },
+          { "type": "ul", "items": ["Proporcionar y mantener el funcionamiento de NexPawn", "Permitir la gestión de casas de empeño dentro de la plataforma", "Mejorar la experiencia del usuario", "Brindar soporte técnico", "Enviar comunicaciones relacionadas con el servicio"] }
+        ]
+      },
+      {
+        "title": "3. Responsabilidad sobre los datos",
+        "blocks": [
+          { "type": "p", "text": "NexPawn actúa como proveedor de software." },
+          { "type": "p", "text": "El usuario es el responsable de los datos que ingresa en la plataforma, incluyendo la información de sus propios clientes, y declara contar con la autorización necesaria para su tratamiento." }
+        ]
+      },
+      {
+        "title": "4. Almacenamiento y seguridad",
+        "blocks": [
+          { "type": "p", "text": "La información se almacena en servidores seguros y se aplican medidas razonables para proteger los datos contra accesos no autorizados, pérdida o alteración." },
+          { "type": "p", "text": "Sin embargo, ningún sistema es completamente seguro, por lo que no se puede garantizar seguridad absoluta." }
+        ]
+      },
+      {
+        "title": "5. Derechos del usuario",
+        "blocks": [
+          { "type": "p", "text": "El usuario puede:" },
+          { "type": "ul", "items": ["Acceder a su información", "Solicitar corrección o actualización", "Solicitar eliminación de sus datos"] },
+          { "type": "p", "text": "Para ejercer estos derechos, puede contactarnos a través del correo electrónico indicado más abajo." }
+        ]
+      },
+      {
+        "title": "6. Uso de cookies",
+        "blocks": [
+          { "type": "p", "text": "NexPawn puede utilizar cookies o tecnologías similares para mejorar la experiencia del usuario y analizar el uso del sitio." }
+        ]
+      },
+      {
+        "title": "7. Cambios en esta política",
+        "blocks": [
+          { "type": "p", "text": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios serán publicados en esta misma página." }
+        ]
+      },
+      {
+        "title": "8. Contacto",
+        "blocks": [
+          { "type": "p", "text": "Para consultas relacionadas con esta política, puedes escribir a:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos de Uso",
+    "lastUpdated": "Última actualización: abril 2026",
+    "sections": [
+      {
+        "title": "1. Uso del servicio",
+        "blocks": [
+          { "type": "p", "text": "NexPawn es una plataforma de software diseñada para la gestión de casas de empeño." },
+          { "type": "p", "text": "El usuario se compromete a utilizar el servicio de manera legal y adecuada." }
+        ]
+      },
+      {
+        "title": "2. Responsabilidad del usuario",
+        "blocks": [
+          { "type": "p", "text": "El usuario es responsable de:" },
+          { "type": "ul", "items": ["La información que registra en la plataforma", "El uso adecuado del sistema", "La confidencialidad de sus credenciales"] },
+          { "type": "p", "text": "NexPawn no se hace responsable por el uso indebido del sistema por parte del usuario." }
+        ]
+      },
+      {
+        "title": "3. Datos de terceros",
+        "blocks": [
+          { "type": "p", "text": "El usuario declara que cuenta con la autorización necesaria para almacenar y gestionar datos de terceros (clientes) dentro de la plataforma." }
+        ]
+      },
+      {
+        "title": "4. Disponibilidad del servicio",
+        "blocks": [
+          { "type": "p", "text": "NexPawn se ofrece \"tal cual\" y no garantiza disponibilidad ininterrumpida del servicio." },
+          { "type": "p", "text": "Podrán realizarse mantenimientos o actualizaciones que afecten temporalmente el acceso." }
+        ]
+      },
+      {
+        "title": "5. Pagos y suscripciones",
+        "blocks": [
+          { "type": "ul", "items": ["El acceso al servicio puede estar sujeto a pagos recurrentes (mensuales)", "Los pagos no son reembolsables, salvo disposición contraria", "NexPawn puede modificar los precios en cualquier momento"] }
+        ]
+      },
+      {
+        "title": "6. Limitación de responsabilidad",
+        "blocks": [
+          { "type": "p", "text": "NexPawn no será responsable por:" },
+          { "type": "ul", "items": ["Pérdidas económicas derivadas del uso del sistema", "Errores en la información ingresada por el usuario", "Decisiones tomadas con base en los datos del sistema"] }
+        ]
+      },
+      {
+        "title": "7. Terminación del servicio",
+        "blocks": [
+          { "type": "p", "text": "NexPawn podrá suspender o cancelar cuentas en caso de:" },
+          { "type": "ul", "items": ["Uso indebido", "Incumplimiento de estos términos"] }
+        ]
+      },
+      {
+        "title": "8. Modificaciones",
+        "blocks": [
+          { "type": "p", "text": "Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuo del servicio implica la aceptación de dichos cambios." }
+        ]
+      },
+      {
+        "title": "9. Contacto",
+        "blocks": [
+          { "type": "p", "text": "Para cualquier duda o solicitud:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  }
+}

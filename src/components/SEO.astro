@@ -1,10 +1,13 @@
 ---
+import { languages } from '../i18n';
+
 interface Props {
   title: string;
   description: string;
   lang?: 'es' | 'en';
   canonical?: string;
   ogImage?: string;
+  pagePath?: string;
 }
 
 const {
@@ -13,9 +16,11 @@ const {
   lang = 'es',
   canonical = 'https://nexpawn.com',
   ogImage = 'https://nexpawn.com/og-image.png',
+  pagePath = '',
 } = Astro.props;
 
 const siteUrl = 'https://nexpawn.com';
+const pathSuffix = pagePath ? `/${pagePath}` : '';
 ---
 
 <!-- Primary Meta -->
@@ -28,8 +33,9 @@ const siteUrl = 'https://nexpawn.com';
 <meta http-equiv="content-language" content={lang} />
 
 <!-- hreflang -->
-<link rel="alternate" hreflang="es" href={`${siteUrl}/es/software-casa-de-empeno`} />
-<link rel="alternate" hreflang="en" href={`${siteUrl}/en/pawn-shop-software`} />
+{languages.map((l) => (
+  <link rel="alternate" hreflang={l} href={`${siteUrl}/${l}${pathSuffix}`} />
+))}
 <link rel="alternate" hreflang="x-default" href={siteUrl} />
 
 <!-- Open Graph -->

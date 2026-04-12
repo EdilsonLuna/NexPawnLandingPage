@@ -1,87 +1,30 @@
 ---
+import { t } from '../i18n';
+import type { Lang } from '../i18n';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+
 const checkIcon = `<path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
 const crossIcon = `<path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`;
 
-const plans = [
-  {
-    plan: 'Básico',
-    currency: '$',
-    amount: '299',
-    period: '/mes',
-    desc: 'Perfecto para pequeñas casas de empeño que están comenzando a digitalizar su operación.',
-    cta: 'Comenzar gratis',
-    ctaVariant: 'btn--outline',
-    popular: false,
-    features: [
-      { text: 'Hasta 100 empeños activos', included: true },
-      { text: '1 usuario', included: true },
-      { text: 'Gestión de empeños', included: true },
-      { text: 'Control de caja', included: true },
-      { text: 'Expedientes de clientes (básico)', included: true },
-      { text: 'Reportes básicos', included: true },
-      { text: 'Alertas de vencimiento', included: false },
-      { text: 'Multiusuario y roles', included: false },
-      { text: 'Reportes avanzados', included: false },
-      { text: 'Soporte prioritario', included: false },
-    ],
-  },
-  {
-    plan: 'Profesional',
-    currency: '$',
-    amount: '699',
-    period: '/mes',
-    desc: 'Para casas de empeño en crecimiento que necesitan más control y automatización.',
-    cta: 'Comenzar prueba',
-    ctaVariant: 'btn--primary',
-    popular: true,
-    features: [
-      { text: 'Empeños activos ilimitados', included: true },
-      { text: 'Hasta 5 usuarios', included: true },
-      { text: 'Gestión de empeños', included: true },
-      { text: 'Control de caja avanzado', included: true },
-      { text: 'Expedientes de clientes completos', included: true },
-      { text: 'Reportes avanzados + exportar', included: true },
-      { text: 'Alertas y notificaciones', included: true },
-      { text: 'Multiusuario y roles', included: true },
-      { text: 'Inventario de artículos', included: true },
-      { text: 'Soporte prioritario', included: false },
-    ],
-  },
-  {
-    plan: 'Empresarial',
-    currency: '$',
-    amount: '1,299',
-    period: '/mes',
-    desc: 'Solución completa para cadenas de casas de empeño o negocios con alta demanda operativa.',
-    cta: 'Hablar con ventas',
-    ctaVariant: 'btn--outline',
-    popular: false,
-    features: [
-      { text: 'Empeños activos ilimitados', included: true },
-      { text: 'Usuarios ilimitados', included: true },
-      { text: 'Gestión de empeños', included: true },
-      { text: 'Control de caja avanzado', included: true },
-      { text: 'Expedientes de clientes completos', included: true },
-      { text: 'Reportes avanzados + exportar', included: true },
-      { text: 'Alertas y notificaciones', included: true },
-      { text: 'Multiusuario y roles', included: true },
-      { text: 'Múltiples sucursales', included: true },
-      { text: 'Soporte prioritario 24/7', included: true },
-    ],
-  },
-];
+const plans = t(lang, 'pricing.plans') as {
+  plan: string; currency: string; amount: string; period: string;
+  desc: string; cta: string; ctaVariant: string; popular: boolean;
+  features: { text: string; included: boolean }[];
+}[];
 ---
 
 <section class="section section--alt" id="precios" aria-labelledby="pricing-title">
   <div class="container">
 
     <header class="section__header">
-      <span class="section__eyebrow">Planes y precios</span>
+      <span class="section__eyebrow">{t(lang, 'pricing.eyebrow')}</span>
       <h2 class="section__title" id="pricing-title">
-        Elige el plan que mejor se adapta a tu negocio
+        {t(lang, 'pricing.title')}
       </h2>
       <p class="section__subtitle">
-        Sin costos ocultos. Sin contratos forzosos. Cambia de plan cuando lo necesites.
+        {t(lang, 'pricing.subtitle')}
       </p>
     </header>
 
@@ -90,7 +33,7 @@ const plans = [
         <div class={`pricing-card${plan.popular ? ' pricing-card--popular' : ''}`}>
           {plan.popular && (
             <div class="pricing-card__badge">
-              <span class="badge badge--popular">Más popular</span>
+              <span class="badge badge--popular">{t(lang, 'pricing.popularBadge')}</span>
             </div>
           )}
 
@@ -104,7 +47,7 @@ const plans = [
 
           <p class="pricing-card__desc">{plan.desc}</p>
 
-          <ul class="pricing-card__features" aria-label={`Incluido en plan ${plan.plan}`}>
+          <ul class="pricing-card__features" aria-label={`${t(lang, 'pricing.featuresLabel')} ${plan.plan}`}>
             {plan.features.map((feature) => (
               <li class={`pricing-card__feature${!feature.included ? ' pricing-card__feature--off' : ''}`}>
                 <span class={`pricing-card__feature-icon${!feature.included ? ' pricing-card__feature-icon--off' : ''}`} aria-hidden="true">
@@ -124,8 +67,8 @@ const plans = [
 
     <!-- Footnote -->
     <p class="text-center text-muted" style="margin-top:var(--space-8);font-size:var(--font-size-sm);">
-      Gestiona tu casa de empeño.
-      <a href="#demo" class="text-blue font-semibold" style="margin-left:4px;">Empieza hoy con NexPawn →</a>
+      {t(lang, 'pricing.footnote')}
+      <a href="#demo" class="text-blue font-semibold" style="margin-left:4px;">{t(lang, 'pricing.footnoteCta')}</a>
     </p>
 
   </div>

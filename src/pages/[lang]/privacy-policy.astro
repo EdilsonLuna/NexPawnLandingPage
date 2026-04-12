@@ -1,0 +1,120 @@
+---
+import { getStaticLangPaths, t } from '../../i18n';
+import type { Lang } from '../../i18n';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const { lang } = Astro.params as { lang: Lang };
+
+const sections = t(lang, 'privacy.sections') as {
+  title: string;
+  blocks: { type: string; text?: string; items?: string[]; href?: string }[];
+}[];
+---
+
+<Layout
+  title={t(lang, 'meta.privacy.title')}
+  description={t(lang, 'meta.privacy.description')}
+  lang={lang}
+  canonical={t(lang, 'meta.privacy.canonical')}
+  pagePath="privacy-policy"
+>
+  <Navbar lang={lang} />
+  <main class="legal-page">
+    <div class="container">
+      <h1>{t(lang, 'privacy.title')}</h1>
+      <p class="last-updated">{t(lang, 'privacy.lastUpdated')}</p>
+
+      <p>{t(lang, 'privacy.intro')}</p>
+
+      {sections.map((section) => (
+        <>
+          <h2>{section.title}</h2>
+          {section.blocks.map((block) => {
+            if (block.type === 'p') return <p>{block.text}</p>;
+            if (block.type === 'h3') return <h3>{block.text}</h3>;
+            if (block.type === 'ul') return (
+              <ul>
+                {block.items!.map((item) => <li>{item}</li>)}
+              </ul>
+            );
+            if (block.type === 'link') return <p><a href={block.href}>{block.text}</a></p>;
+            return null;
+          })}
+        </>
+      ))}
+    </div>
+  </main>
+  <Footer lang={lang} />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: 6rem 1.5rem 4rem;
+    min-height: 60vh;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-blue-600, #1b63ff);
+    margin-bottom: 0.5rem;
+  }
+
+  .last-updated {
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #6b7280);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text, #111827);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text, #111827);
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ul li {
+    color: var(--color-text-muted, #374151);
+    line-height: 1.75;
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: var(--color-blue-600, #1b63ff);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+</style>

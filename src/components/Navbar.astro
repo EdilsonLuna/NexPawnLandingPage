@@ -1,26 +1,15 @@
 ---
+import { t } from '../i18n';
+import type { Lang } from '../i18n';
+
 interface Props {
-  lang?: 'es' | 'en';
+  lang: Lang;
 }
-const { lang = 'es' } = Astro.props;
+const { lang } = Astro.props;
 
-const navLinks = lang === 'es'
-  ? [
-      { label: 'Beneficios', href: '#beneficios' },
-      { label: 'Funcionalidades', href: '#funcionalidades' },
-      { label: 'Precios', href: '#precios' },
-      { label: 'Demo', href: '#demo' },
-    ]
-  : [
-      { label: 'Benefits', href: '#beneficios' },
-      { label: 'Features', href: '#funcionalidades' },
-      { label: 'Pricing', href: '#precios' },
-      { label: 'Demo', href: '#demo' },
-    ];
-
-const cta = lang === 'es' ? 'Probar gratis' : 'Try for free';
-const esUrl = '/es/software-casa-de-empeno';
-const enUrl = '/en/pawn-shop-software';
+const navLinks = t(lang, 'navbar.links') as { label: string; href: string }[];
+const esUrl = '/es/';
+const enUrl = '/en/';
 ---
 
 <header class="navbar" id="navbar">
@@ -28,7 +17,7 @@ const enUrl = '/en/pawn-shop-software';
     <div class="navbar__inner">
 
       <!-- Logo -->
-      <a href="/" class="navbar__logo" aria-label="NexPawn inicio">
+      <a href={`/${lang}/`} class="navbar__logo" aria-label="NexPawn">
         <span class="navbar__logo-icon" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
@@ -40,7 +29,7 @@ const enUrl = '/en/pawn-shop-software';
       </a>
 
       <!-- Desktop nav -->
-      <nav class="navbar__nav" aria-label="Navegación principal">
+      <nav class="navbar__nav" aria-label={t(lang, 'navbar.navLabel')}>
         {navLinks.map((link) => (
           <a href={link.href} class="navbar__nav-link">{link.label}</a>
         ))}
@@ -49,19 +38,19 @@ const enUrl = '/en/pawn-shop-software';
       <!-- Actions -->
       <div class="navbar__actions">
         <!-- Language switcher -->
-        <div class="lang-switcher" aria-label="Cambiar idioma">
+        <div class="lang-switcher" aria-label="Language">
           <a href={esUrl} class={`lang-switcher__btn${lang === 'es' ? ' lang-switcher__btn--active' : ''}`} hreflang="es" aria-label="Español">ES</a>
           <span class="lang-switcher__sep" aria-hidden="true">|</span>
           <a href={enUrl} class={`lang-switcher__btn${lang === 'en' ? ' lang-switcher__btn--active' : ''}`} hreflang="en" aria-label="English">EN</a>
         </div>
         <a href="#demo" class="btn btn--primary btn--sm">
-          {cta}
+          {t(lang, 'navbar.cta')}
         </a>
         <!-- Hamburger (mobile) -->
         <button
           class="navbar__hamburger"
           id="menu-toggle"
-          aria-label="Abrir menú"
+          aria-label={t(lang, 'navbar.menuLabel')}
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -76,13 +65,13 @@ const enUrl = '/en/pawn-shop-software';
   </div>
 
   <!-- Mobile menu -->
-  <nav class="navbar__mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+  <nav class="navbar__mobile-menu" id="mobile-menu" aria-label={t(lang, 'navbar.mobileMenuLabel')}>
     {navLinks.map((link) => (
       <a href={link.href} class="navbar__mobile-link">{link.label}</a>
     ))}
     <div style="padding-top: var(--space-3);">
       <a href="#demo" class="btn btn--primary w-full" style="justify-content:center">
-        Prueba gratis
+        {t(lang, 'navbar.mobileCta')}
       </a>
     </div>
   </nav>

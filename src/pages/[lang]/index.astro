@@ -1,0 +1,33 @@
+---
+import { getStaticLangPaths, t } from '../../i18n';
+import type { Lang } from '../../i18n';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Hero from '../../components/Hero.astro';
+import Benefits from '../../components/Benefits.astro';
+import Features from '../../components/Features.astro';
+import Pricing from '../../components/Pricing.astro';
+import Demo from '../../components/Demo.astro';
+import Footer from '../../components/Footer.astro';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const { lang } = Astro.params as { lang: Lang };
+---
+
+<Layout
+  title={t(lang, 'meta.landing.title')}
+  description={t(lang, 'meta.landing.description')}
+  lang={lang}
+  canonical={t(lang, 'meta.landing.canonical')}
+>
+  <Navbar lang={lang} />
+  <main>
+    <Hero lang={lang} />
+    <Benefits lang={lang} />
+    <Features lang={lang} />
+    <Pricing lang={lang} />
+    <Demo lang={lang} />
+  </main>
+  <Footer lang={lang} />
+</Layout>

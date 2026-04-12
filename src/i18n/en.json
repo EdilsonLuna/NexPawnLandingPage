@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "landing": {
+      "title": "Pawn Shop Software — NexPawn | Pawn Management System",
+      "description": "NexPawn is the leading pawn shop software for managing loans, inventory, customers and cash register in one place. Start your free trial today.",
+      "canonical": "https://nexpawn.com/en"
+    },
+    "privacy": {
+      "title": "Privacy Policy — NexPawn",
+      "description": "Learn how NexPawn collects, uses and protects your personal information.",
+      "canonical": "https://nexpawn.com/en/privacy-policy"
+    },
+    "terms": {
+      "title": "Terms of Use — NexPawn",
+      "description": "Read the terms and conditions for using NexPawn pawn shop management software.",
+      "canonical": "https://nexpawn.com/en/terms-of-use"
+    }
+  },
+  "navbar": {
+    "links": [
+      { "label": "Benefits", "href": "#beneficios" },
+      { "label": "Features", "href": "#funcionalidades" },
+      { "label": "Pricing", "href": "#precios" },
+      { "label": "Demo", "href": "#demo" }
+    ],
+    "cta": "Try for free",
+    "navLabel": "Main navigation",
+    "menuLabel": "Open menu",
+    "mobileMenuLabel": "Mobile menu",
+    "mobileCta": "Try free"
+  },
+  "hero": {
+    "eyebrow": "100% cloud-based pawn management software",
+    "titleLine1": "Take your pawn shop",
+    "titleHighlight": " to the next level",
+    "titleLine2": "with NexPawn",
+    "subtitle": "Control your pawn loans, customers and cash register in one place. No spreadsheets. No errors. No headaches.",
+    "ctaDemo": "Try demo for free",
+    "ctaPricing": "See pricing",
+    "trust1": "No credit card required",
+    "trust2": "Up and running in minutes",
+    "trust3": "Bilingual support",
+    "dashboard": {
+      "title": "Control panel · Today",
+      "online": "Online",
+      "stat1Label": "Active loans",
+      "stat2Label": "Today's income",
+      "stat3Label": "Due today",
+      "badgeActive": "Active",
+      "badgeDueToday": "Due today",
+      "badgePaid": "Paid",
+      "chartTitle": "Last 7 days income"
+    }
+  },
+  "benefits": {
+    "eyebrow": "Why NexPawn?",
+    "title": "Real results for your pawn shop",
+    "subtitle": "Built for pawn shops across Latin America and the US. No more spreadsheets, no more manual errors.",
+    "items": [
+      {
+        "title": "Track every pawn loan without losing money",
+        "desc": "Every pawn loan recorded with amount, interest, and due date. No missed items, no losses. Full control of your pawn business."
+      },
+      {
+        "title": "Run your daily cash register without errors",
+        "desc": "Log income, expenses and cash closings in seconds. Say goodbye to spreadsheets and the costly mismatches they cause."
+      },
+      {
+        "title": "Never miss a due date again",
+        "desc": "Automatic alerts for expiring loans, renewals, and pending payments. NexPawn works in the background while you serve customers."
+      },
+      {
+        "title": "Make decisions with clear data",
+        "desc": "Real-time income, active loans and profitability reports. Know exactly where your pawn shop stands and where it's headed."
+      },
+      {
+        "title": "Know which customers drive the most profit",
+        "desc": "Full customer history: past loans, payments, renewals. Identify your best clients and build lasting relationships."
+      },
+      {
+        "title": "Access from any device",
+        "desc": "Phone, tablet, or computer. NexPawn runs in your browser with nothing to install. Your pawn shop, always in your pocket."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Pawn management system features",
+    "title": "Everything your pawn operation needs",
+    "subtitle": "From creating a pawn loan to closing the cash register, NexPawn covers every part of your daily operation.",
+    "items": [
+      {
+        "tag": "Core",
+        "title": "Pawn loan management",
+        "desc": "Create, track, and close pawn loans with full item detail, interest, due dates, photos, and 100% traceable history."
+      },
+      {
+        "tag": "Inventory",
+        "title": "Item inventory",
+        "desc": "Manage all pawned or for-sale items. Fast search, photo storage and valuation to keep your inventory organized."
+      },
+      {
+        "tag": "Cash",
+        "title": "Cash register & payments",
+        "desc": "Log payments, deposits and reconciliations. Daily cash closings and instant financial status for your pawn shop."
+      },
+      {
+        "tag": "Customers",
+        "title": "Customer records",
+        "desc": "Full customer database with complete history of loans, payments and documents. Fast to query, secure to store."
+      },
+      {
+        "tag": "Reports",
+        "title": "Reports & analytics",
+        "desc": "Generate income, sales and overdue loan reports. Export to PDF or Excel with one click. Real data for real decisions."
+      },
+      {
+        "tag": "Alerts",
+        "title": "Automatic notifications",
+        "desc": "Due date alerts, WhatsApp and email reminders. Keep your team and customers informed without lifting a finger."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Plans & pricing",
+    "title": "Choose the plan that fits your pawn shop",
+    "subtitle": "No hidden fees. No forced contracts. Change plans whenever you need.",
+    "popularBadge": "Most popular",
+    "featuresLabel": "Included in plan",
+    "footnote": "Manage your pawn shop.",
+    "footnoteCta": "Start today with NexPawn →",
+    "plans": [
+      {
+        "plan": "Basic",
+        "currency": "$",
+        "amount": "14.99",
+        "period": "USD/mo",
+        "desc": "Perfect for small pawn shops starting to digitize their operation.",
+        "cta": "Get started",
+        "ctaVariant": "btn--outline",
+        "popular": true,
+        "features": [
+          { "text": "Dashboard with your pawn shop data", "included": true },
+          { "text": "Pawn loan management", "included": true },
+          { "text": "Customer management", "included": true },
+          { "text": "1 user", "included": true }
+        ]
+      }
+    ]
+  },
+  "demo": {
+    "badge": "Fully functional demo · No sign-up needed",
+    "titleLine1": "Try NexPawn right now.",
+    "titleLine2": "No sign-up. No commitment.",
+    "subtitle": "Access a fully functional pawn shop management demo and see how your business would look organized. The #1 pawn tracking software — experience it today.",
+    "cta": "Try NexPawn free",
+    "note": "Response within 24 hours · Bilingual support"
+  },
+  "footer": {
+    "tagline": "Modern pawn shop software. Fast, secure and easy to use.",
+    "col1": "Product",
+    "col2": "Company",
+    "col3": "Support",
+    "copy": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms of use",
+    "cookies": "Cookies",
+    "productLinks": [
+      { "label": "Features", "href": "#funcionalidades" },
+      { "label": "Pricing", "href": "#precios" },
+      { "label": "Free demo", "href": "#demo" },
+      { "label": "What's new", "href": "#" }
+    ],
+    "companyLinks": [
+      { "label": "About NexPawn", "href": "#" },
+      { "label": "Blog", "href": "#" },
+      { "label": "Contact", "href": "mailto:hello@nexpawn.com" },
+      { "label": "Work with us", "href": "#" }
+    ],
+    "supportLinks": [
+      { "label": "Help center", "href": "#" },
+      { "label": "Documentation", "href": "#" },
+      { "label": "Technical support", "href": "#" },
+      { "label": "System status", "href": "#" }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: April 2026",
+    "intro": "At NexPawn we value and respect the privacy of our users. This Privacy Policy describes how we collect, use and protect information when you use our platform.",
+    "sections": [
+      {
+        "title": "1. Information we collect",
+        "blocks": [
+          { "type": "p", "text": "We may collect the following types of information:" },
+          { "type": "h3", "text": "a. User information:" },
+          { "type": "ul", "items": ["Name", "Email address", "Login credentials"] },
+          { "type": "h3", "text": "b. Information generated within the system:" },
+          { "type": "ul", "items": ["Customer data entered by the user (names, ID, contact details)", "Pawn, transaction and operation records", "Cash register, purchase and sales records"] }
+        ]
+      },
+      {
+        "title": "2. Use of information",
+        "blocks": [
+          { "type": "p", "text": "Collected information is used to:" },
+          { "type": "ul", "items": ["Provide and maintain NexPawn's operation", "Enable pawn shop management within the platform", "Improve user experience", "Provide technical support", "Send service-related communications"] }
+        ]
+      },
+      {
+        "title": "3. Data responsibility",
+        "blocks": [
+          { "type": "p", "text": "NexPawn acts as a software provider." },
+          { "type": "p", "text": "The user is responsible for the data entered into the platform, including information about their own customers, and declares having the necessary authorization for its processing." }
+        ]
+      },
+      {
+        "title": "4. Storage and security",
+        "blocks": [
+          { "type": "p", "text": "Information is stored on secure servers and reasonable measures are applied to protect data against unauthorized access, loss or alteration." },
+          { "type": "p", "text": "However, no system is completely secure, so absolute security cannot be guaranteed." }
+        ]
+      },
+      {
+        "title": "5. User rights",
+        "blocks": [
+          { "type": "p", "text": "The user may:" },
+          { "type": "ul", "items": ["Access their information", "Request correction or update", "Request deletion of their data"] },
+          { "type": "p", "text": "To exercise these rights, you may contact us via the email address indicated below." }
+        ]
+      },
+      {
+        "title": "6. Use of cookies",
+        "blocks": [
+          { "type": "p", "text": "NexPawn may use cookies or similar technologies to improve user experience and analyze site usage." }
+        ]
+      },
+      {
+        "title": "7. Changes to this policy",
+        "blocks": [
+          { "type": "p", "text": "We reserve the right to modify this Privacy Policy at any time. Changes will be published on this same page." }
+        ]
+      },
+      {
+        "title": "8. Contact",
+        "blocks": [
+          { "type": "p", "text": "For questions related to this policy, you may write to:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: April 2026",
+    "sections": [
+      {
+        "title": "1. Use of the service",
+        "blocks": [
+          { "type": "p", "text": "NexPawn is a software platform designed for pawn shop management." },
+          { "type": "p", "text": "The user agrees to use the service in a legal and appropriate manner." }
+        ]
+      },
+      {
+        "title": "2. User responsibility",
+        "blocks": [
+          { "type": "p", "text": "The user is responsible for:" },
+          { "type": "ul", "items": ["The information recorded on the platform", "Proper use of the system", "The confidentiality of their credentials"] },
+          { "type": "p", "text": "NexPawn is not responsible for misuse of the system by the user." }
+        ]
+      },
+      {
+        "title": "3. Third-party data",
+        "blocks": [
+          { "type": "p", "text": "The user declares that they have the necessary authorization to store and manage third-party data (customers) within the platform." }
+        ]
+      },
+      {
+        "title": "4. Service availability",
+        "blocks": [
+          { "type": "p", "text": "NexPawn is provided \"as is\" and does not guarantee uninterrupted service availability." },
+          { "type": "p", "text": "Maintenance or updates may be performed that temporarily affect access." }
+        ]
+      },
+      {
+        "title": "5. Payments and subscriptions",
+        "blocks": [
+          { "type": "ul", "items": ["Access to the service may be subject to recurring (monthly) payments", "Payments are non-refundable unless otherwise stated", "NexPawn may modify prices at any time"] }
+        ]
+      },
+      {
+        "title": "6. Limitation of liability",
+        "blocks": [
+          { "type": "p", "text": "NexPawn shall not be liable for:" },
+          { "type": "ul", "items": ["Economic losses arising from use of the system", "Errors in information entered by the user", "Decisions made based on the system's data"] }
+        ]
+      },
+      {
+        "title": "7. Service termination",
+        "blocks": [
+          { "type": "p", "text": "NexPawn may suspend or cancel accounts in case of:" },
+          { "type": "ul", "items": ["Misuse", "Breach of these terms"] }
+        ]
+      },
+      {
+        "title": "8. Modifications",
+        "blocks": [
+          { "type": "p", "text": "We reserve the right to modify these terms at any time. Continued use of the service implies acceptance of such changes." }
+        ]
+      },
+      {
+        "title": "9. Contact",
+        "blocks": [
+          { "type": "p", "text": "For any questions or requests:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  }
+}

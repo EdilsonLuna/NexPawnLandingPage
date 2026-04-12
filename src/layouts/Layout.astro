@@ -7,6 +7,7 @@ interface Props {
   description?: string;
   lang?: 'es' | 'en';
   canonical?: string;
+  pagePath?: string;
 }
 
 const {
@@ -14,6 +15,7 @@ const {
   description = 'NexPawn: software para casas de empeño que controla empeños, caja, clientes e informes en un solo lugar. Prueba gratis. Sin tarjeta de crédito.',
   lang = 'es',
   canonical,
+  pagePath = '',
 } = Astro.props;
 ---
 
@@ -25,7 +27,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#1b63ff" />
-    <SEO title={title} description={description} lang={lang} canonical={canonical} />
+    <SEO title={title} description={description} lang={lang} canonical={canonical} pagePath={pagePath} />
   </head>
   <body>
     <slot />
