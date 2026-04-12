@@ -165,6 +165,7 @@
     "copy": "All rights reserved.",
     "privacy": "Privacy",
     "terms": "Terms of use",
+    "refund": "Refund Policy",
     "cookies": "Cookies",
     "productLinks": [
       { "label": "Features", "href": "#funcionalidades" },
@@ -245,6 +246,60 @@
         "title": "8. Contact",
         "blocks": [
           { "type": "p", "text": "For questions related to this policy, you may write to:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  },
+  "refund": {
+    "title": "Refund Policy",
+    "lastUpdated": "Last updated: April 2026",
+    "intro": "Thank you for using NexPawn. We strive to provide a high-quality service. However, we understand that there may be situations where a refund is appropriate.",
+    "sections": [
+      {
+        "title": "1. Refund Eligibility",
+        "blocks": [
+          { "type": "ul", "items": [
+            "Customers may request a full refund within 7 days of the initial purchase.",
+            "Refunds apply only to the first payment of a subscription.",
+            "Renewals and recurring charges are generally non-refundable."
+          ]}
+        ]
+      },
+      {
+        "title": "2. Subscription Cancellation",
+        "blocks": [
+          { "type": "ul", "items": [
+            "You may cancel your subscription at any time.",
+            "Once canceled, you will continue to have access to the service until the end of your current billing period.",
+            "No partial refunds will be issued for unused time."
+          ]}
+        ]
+      },
+      {
+        "title": "3. Exceptions",
+        "blocks": [
+          { "type": "p", "text": "Refunds may be granted outside the standard policy if:" },
+          { "type": "ul", "items": [
+            "There are technical issues that prevent proper use of the service.",
+            "There are billing errors or duplicate charges."
+          ]}
+        ]
+      },
+      {
+        "title": "4. Abuse",
+        "blocks": [
+          { "type": "p", "text": "We reserve the right to refuse refunds in cases of:" },
+          { "type": "ul", "items": [
+            "Abuse of the refund policy.",
+            "Violation of our Terms of Service."
+          ]}
+        ]
+      },
+      {
+        "title": "5. How to Request a Refund",
+        "blocks": [
+          { "type": "p", "text": "To request a refund, please contact us at:" },
           { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
         ]
       }

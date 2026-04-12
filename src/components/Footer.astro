@@ -83,6 +83,12 @@ const supportLinks = t(lang, 'footer.supportLinks') as { label: string; href: st
       <nav class="footer__bottom-links" aria-label="Legal">
         <a href={`/${lang}/privacy-policy`} class="footer__bottom-link">{t(lang, 'footer.privacy')}</a>
         <a href={`/${lang}/terms-of-use`} class="footer__bottom-link">{t(lang, 'footer.terms')}</a>
+        <a
+          href={lang === 'es' ? '/es/politica-reembolso' : `/${lang}/refund-policy`}
+          class="footer__bottom-link"
+        >
+          {t(lang, 'footer.refund')}
+        </a>
         <a href="#" class="footer__bottom-link">{t(lang, 'footer.cookies')}</a>
       </nav>
     </div>

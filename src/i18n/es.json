@@ -165,6 +165,7 @@
     "copy": "Todos los derechos reservados.",
     "privacy": "Privacidad",
     "terms": "Términos de uso",
+    "refund": "Política de Reembolso",
     "cookies": "Cookies",
     "productLinks": [
       { "label": "Funcionalidades", "href": "#funcionalidades" },
@@ -245,6 +246,60 @@
         "title": "8. Contacto",
         "blocks": [
           { "type": "p", "text": "Para consultas relacionadas con esta política, puedes escribir a:" },
+          { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
+        ]
+      }
+    ]
+  },
+  "refund": {
+    "title": "Política de Reembolso",
+    "lastUpdated": "Última actualización: abril 2026",
+    "intro": "Gracias por usar NexPawn. Nos esforzamos por ofrecer un servicio de alta calidad. Sin embargo, entendemos que puede haber situaciones en las que un reembolso sea apropiado.",
+    "sections": [
+      {
+        "title": "1. Elegibilidad para reembolso",
+        "blocks": [
+          { "type": "ul", "items": [
+            "Los clientes pueden solicitar un reembolso completo dentro de los 7 días posteriores a la compra inicial.",
+            "Los reembolsos aplican únicamente al primer pago de una suscripción.",
+            "Las renovaciones y cargos recurrentes generalmente no son reembolsables."
+          ]}
+        ]
+      },
+      {
+        "title": "2. Cancelación de suscripción",
+        "blocks": [
+          { "type": "ul", "items": [
+            "Puedes cancelar tu suscripción en cualquier momento.",
+            "Una vez cancelada, continuarás teniendo acceso al servicio hasta el final de tu período de facturación actual.",
+            "No se emitirán reembolsos parciales por tiempo no utilizado."
+          ]}
+        ]
+      },
+      {
+        "title": "3. Excepciones",
+        "blocks": [
+          { "type": "p", "text": "Podrán otorgarse reembolsos fuera de la política estándar si:" },
+          { "type": "ul", "items": [
+            "Existen problemas técnicos que impidan el uso correcto del servicio.",
+            "Hay errores de facturación o cargos duplicados."
+          ]}
+        ]
+      },
+      {
+        "title": "4. Uso indebido",
+        "blocks": [
+          { "type": "p", "text": "Nos reservamos el derecho de rechazar reembolsos en casos de:" },
+          { "type": "ul", "items": [
+            "Abuso de la política de reembolso.",
+            "Violación de nuestros Términos de Uso."
+          ]}
+        ]
+      },
+      {
+        "title": "5. Cómo solicitar un reembolso",
+        "blocks": [
+          { "type": "p", "text": "Para solicitar un reembolso, comunícate con nosotros en:" },
           { "type": "link", "href": "mailto:contact@nexpawn.com", "text": "contact@nexpawn.com" }
         ]
       }
