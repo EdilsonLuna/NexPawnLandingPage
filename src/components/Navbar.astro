@@ -39,9 +39,21 @@ const enUrl = '/en/';
       <div class="navbar__actions">
         <!-- Language switcher -->
         <div class="lang-switcher" aria-label="Language">
-          <a href={esUrl} class={`lang-switcher__btn${lang === 'es' ? ' lang-switcher__btn--active' : ''}`} hreflang="es" aria-label="Español">ES</a>
+          <a
+            href={esUrl}
+            class={`lang-switcher__btn${lang === 'es' ? ' lang-switcher__btn--active' : ''}`}
+            hreflang="es"
+            aria-label="Español"
+            data-set-lang="es"
+          >ES</a>
           <span class="lang-switcher__sep" aria-hidden="true">|</span>
-          <a href={enUrl} class={`lang-switcher__btn${lang === 'en' ? ' lang-switcher__btn--active' : ''}`} hreflang="en" aria-label="English">EN</a>
+          <a
+            href={enUrl}
+            class={`lang-switcher__btn${lang === 'en' ? ' lang-switcher__btn--active' : ''}`}
+            hreflang="en"
+            aria-label="English"
+            data-set-lang="en"
+          >EN</a>
         </div>
         <a href="#demo" class="btn btn--primary btn--sm">
           {t(lang, 'navbar.cta')}
@@ -103,6 +115,18 @@ const enUrl = '/en/';
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
       menuToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Language switcher: persist the user's choice in a cookie so the
+  // middleware uses it on subsequent visits instead of re-detecting.
+  document.querySelectorAll<HTMLAnchorElement>('[data-set-lang]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const lang = link.dataset.setLang;
+      if (lang === 'es' || lang === 'en') {
+        const maxAge = 60 * 60 * 24 * 365; // 1 year
+        document.cookie = `lang=${lang}; path=/; max-age=${maxAge}; SameSite=Lax`;
+      }
     });
   });
 </script>
