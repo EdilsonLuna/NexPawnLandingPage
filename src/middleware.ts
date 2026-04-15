@@ -3,8 +3,7 @@ import { defineMiddleware } from 'astro:middleware';
 type SupportedLang = 'es' | 'en';
 
 /**
- * Countries where Spanish is the primary language (LATAM + Spain).
- * Used as fallback when Accept-Language is not available.
+ * Countries where Spanish is primary language (LATAM + Spain).
  */
 const SPANISH_COUNTRIES = new Set<string>([
   'AR', 'BO', 'BR', 'CL', 'CO', 'CR', 'CU', 'DO', 'EC',
@@ -12,7 +11,18 @@ const SPANISH_COUNTRIES = new Set<string>([
   'VE', 'PR', 'ES',
 ]);
 
-/** Parses Accept-Language header respecting quality values (q-factors). */
+/** Builds a 302 redirect response with cache prevention headers. */
+function redirect(base: URL, lang: SupportedLang): Response {
+  return new Response(null, {
+    status: 302,
+    headers: {
+      Location: new URL(`/${lang}/`, base).toString(),
+      'Cache-Control': 'no-store',
+    },
+  });
+}
+
+/** Detect language from Accept-Language header */
 function detectLangFromAcceptLanguage(header: string): SupportedLang {
   const tags = header
     .split(',')
@@ -33,53 +43,41 @@ function detectLangFromAcceptLanguage(header: string): SupportedLang {
   return 'en';
 }
 
-/** Maps a country code to a supported language using the SPANISH_COUNTRIES set. */
+/** Detect language from country code */
 function detectLangFromCountry(countryCode: string): SupportedLang {
   return SPANISH_COUNTRIES.has(countryCode.toUpperCase()) ? 'es' : 'en';
 }
 
-/**
- * Middleware for automatic language detection and redirection.
- *
- * Priority order:
- *  1. Cookie "lang"
- *  2. Accept-Language header
- *  3. GeoIP via x-vercel-ip-country (Vercel) or cf-ipcountry (Cloudflare)
- *  4. Default → /en/
- *
- * Redirect loops are prevented by skipping paths that already start with /es or /en.
- */
 export const onRequest = defineMiddleware(({ request, cookies }, next) => {
-  const { pathname } = new URL(request.url);
+  const url = new URL(request.url);
+  const { pathname } = url;
 
-  // Skip: already on a language-prefixed path (avoids redirect loops)
+  // 🚫 Evitar loops
   if (pathname.startsWith('/es') || pathname.startsWith('/en')) {
     return next();
   }
 
-  // 1. Cookie
+  // 1️⃣ Cookie (máxima prioridad)
   const cookieLang = cookies.get('lang')?.value;
   if (cookieLang === 'es' || cookieLang === 'en') {
-    return Response.redirect(new URL(`/${cookieLang}/`, request.url), 302);
+    return redirect(url, cookieLang);
   }
 
-  // 2. Accept-Language header
-  const acceptLanguage = request.headers.get('accept-language');
-  if (acceptLanguage) {
-    const lang = detectLangFromAcceptLanguage(acceptLanguage);
-    return Response.redirect(new URL(`/${lang}/`, request.url), 302);
-  }
-
-  // 3. GeoIP — Vercel injects x-vercel-ip-country; Cloudflare injects cf-ipcountry
+  // 2️⃣ Geo (Vercel / Cloudflare)
   const countryCode =
     request.headers.get('x-vercel-ip-country') ??
     request.headers.get('cf-ipcountry');
 
   if (countryCode) {
-    const lang = detectLangFromCountry(countryCode);
-    return Response.redirect(new URL(`/${lang}/`, request.url), 302);
+    return redirect(url, detectLangFromCountry(countryCode));
   }
 
-  // 4. Default fallback
-  return Response.redirect(new URL('/en/', request.url), 302);
+  // 3️⃣ Accept-Language (fallback)
+  const acceptLanguage = request.headers.get('accept-language');
+  if (acceptLanguage) {
+    return redirect(url, detectLangFromAcceptLanguage(acceptLanguage));
+  }
+
+  // 4️⃣ Default final
+  return redirect(url, 'en');
 });
