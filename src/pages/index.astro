@@ -1,15 +1,5 @@
 ---
-// Root index redirects to the default language
+// Opt out of prerendering so the middleware can run and detect language at request time.
+// In practice, the middleware always redirects before this page renders.
+export const prerender = false;
 ---
-
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0;url=/es/" />
-    <link rel="canonical" href="https://nexpawn.com/es/" />
-    <title>Redirecting…</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/es/">NexPawn</a>…</p>
-  </body>
-</html>
