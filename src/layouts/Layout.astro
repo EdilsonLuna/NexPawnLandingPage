@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SEO from '../components/SEO.astro';
 import Analytics from "@vercel/analytics/astro"
+import SpeedInsights from "@vercel/speed-insights/astro"
 
 interface Props {
   title?: string;
@@ -32,6 +33,8 @@ const {
   </head>
   <body>
     <slot />
+    <!-- Analiticas de pagina de vercel -->
     <Analytics />
+    <SpeedInsights/>
   </body>
 </html>
