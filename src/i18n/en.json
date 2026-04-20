@@ -21,7 +21,7 @@
       { "label": "Benefits", "href": "#beneficios" },
       { "label": "Features", "href": "#funcionalidades" },
       { "label": "Pricing", "href": "#precios" },
-      { "label": "Demo", "href": "#demo" }
+      { "label": "Demo", "href": "https://livedemo.nexpawn.com" }
     ],
     "cta": "Try for free",
     "navLabel": "Main navigation",
@@ -170,7 +170,7 @@
     "productLinks": [
       { "label": "Features", "href": "#funcionalidades" },
       { "label": "Pricing", "href": "#precios" },
-      { "label": "Free demo", "href": "#demo" },
+      { "label": "Free demo", "href": "https://livedemo.nexpawn.com" },
       { "label": "What's new", "href": "#" }
     ],
     "companyLinks": [
