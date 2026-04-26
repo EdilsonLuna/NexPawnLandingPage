@@ -10,7 +10,7 @@ const crossIcon = `<path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-w
 
 const plans = t(lang, 'pricing.plans') as {
   plan: string; currency: string; amount: string; period: string;
-  desc: string; cta: string; ctaVariant: string; popular: boolean;
+  desc: string; cta: string; ctaHref: string; ctaVariant: string; popular: boolean;
   features: { text: string; included: boolean }[];
 }[];
 ---
@@ -58,7 +58,7 @@ const plans = t(lang, 'pricing.plans') as {
             ))}
           </ul>
 
-          <a href="https://livedemo.nexpawn.com" class={`btn ${plan.ctaVariant} w-full`} style="justify-content:center">
+          <a href={plan.ctaHref} class={`btn ${plan.ctaVariant} w-full`} style="justify-content:center">
             {plan.cta}
           </a>
         </div>
