@@ -131,6 +131,7 @@
         "period": "USD/mo",
         "desc": "Ideal for pawn shops starting their digital journey. Includes essential features for daily control.",
         "cta": "Get started",
+        "ctaHref": "https://app.nexpawn.com/registro",
         "ctaVariant": "btn--outline",
         "popular": true,
         "features": [
@@ -145,6 +146,24 @@
           { "text": "- Loan history", "included": true },
           { "text": "- Average per loan", "included": true },
           { "text": "- Time as customer", "included": true }
+        ]
+      },
+      {
+        "plan": "Dedicated Enterprise",
+        "currency": "",
+        "amount": "Custom",
+        "period": "",
+        "desc": "Isolated infrastructure and full customization for your company. Price based on requirements.",
+        "cta": "Request a quote",
+        "ctaHref": "mailto:contacto.edilsonluna@gmail.com?subject=Plan%20Enterprise%20Dedicado%20Nexpawn",
+        "ctaVariant": "btn--primary",
+        "popular": false,
+        "features": [
+          { "text": "Isolated infrastructure", "included": true },
+          { "text": "Corporate subdomain: 'yourcompany.nexpawn.com'", "included": true },
+          { "text": "Dedicated database", "included": true },
+          { "text": "Custom developments quoted separately", "included": true },
+          { "text": "System personalized to your company", "included": true }
         ]
       }
     ]

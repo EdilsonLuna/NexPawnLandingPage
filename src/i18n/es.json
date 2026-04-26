@@ -131,6 +131,7 @@
         "period": "USD/mes",
         "desc": "Ideal para casas de empeño que inician su digitalización. Incluye características esenciales para el control diario.",
         "cta": "Comenzar a usarlo",
+        "ctaHref": "https://app.nexpawn.com/registro",
         "ctaVariant": "btn--outline",
         "popular": true,
         "features": [
@@ -145,6 +146,25 @@
           { "text": "- Historial de empeños", "included": true },
           { "text": "- Promedio por empeño", "included": true },
           { "text": "- Tiempo como cliente", "included": true }
+        ]
+      },
+      {
+        "plan": "Enterprise Dedicado",
+        "currency": "",
+        "amount": "A medida",
+        "period": "",
+        "desc": "Infraestructura aislada y personalización total para tu empresa. Precio según requerimientos.",
+        "cta": "Realiza tu cotización",
+        "ctaHref": "mailto:contacto.edilsonluna@gmail.com?subject=Plan%20Enterprise%20Dedicado%20Nexpawn",
+        "ctaVariant": "btn--primary",
+        "popular": false,
+        "features": [
+          { "text": "Acceso a todos los modulos y funcionalidades activas", "included": true },
+          { "text": "Infraestructura aislada", "included": true },
+          { "text": "Subdominio corporativo: 'tuempresa.nexpawn.com'", "included": true },
+          { "text": "Base de datos dedicada", "included": true },
+          { "text": "Desarrollos a medida cotizados aparte", "included": true },
+          { "text": "Sistema personalizado a tu empresa", "included": true }
         ]
       }
     ]
